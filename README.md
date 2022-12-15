@@ -7,7 +7,7 @@
   </a>
 </p>
 
-##TrustDevice-JS
+## TrustDevice-JS
 
 A lightweight library for determining device uniqueness and risk identification.
 
@@ -17,7 +17,7 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 
 [Open Source Demo](https://statictest.tongdun.net/trustdevice/index.html).
 
-###Browser support
+### Browser support
 
 - Internet Explorer 9+
 - Edge 12+
@@ -72,7 +72,7 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 | Fraud Tools Detection | -  | √ |
 | Behavioral Activity Capturing | -  | √ |
 
-##Pro Introduction
+## Pro Introduction
 
 TrustDecision TrustDevice has the leading device fingerprint technology, which has been integrated by more than 10000 global leading brands, protecting the entire customer journey.
 
@@ -84,29 +84,29 @@ TrustDecision TrustDevice has the leading device fingerprint technology, which h
 
 **There are 6 leading core features about TrustDevice Pro:**
 
-###1. Wide Coverage
+### 1. Wide Coverage
 Comprehensive coverage of Android, iOS, Web, H5, applets and other device types.
 
-###2. Stable and Reliable
+### 2. Stable and Reliable
 TrustDevice served more than 10,000 clients, 200 million+ daily active users , and 6 billion+ devices , with excellent product functions and stability.
 The fingerprint accuracy of different terminal devices exceeded 99.9%, and the output of risk labels exceeded 70 items.
 
-###3. Unparalleled Safety
+### 3. Unparalleled Safety
 TrustDevice's code virtualization & obfuscation technology make the malware fraudsters suffer from painful cost and imprecision when performing reverse-engineering.
 
-###4. Core Intellectual Property
+### 4. Core Intellectual Property
 Fully independent intellectual property rights, with a number of patented technology.
 
-###5. Security Compliance
+### 5. Security Compliance
 TrustDevice is committed to the highest standards in security and compliance to keep your data safe.
 GDPR/CCA/PCI DSS/ISO 27701/ISO 9001 Compliant.
 
-###6. Easy to Deploy
+### 6. Easy to Deploy
 SaaS（Software as a Service）deployment supported, reducing massively your integration cost and enabling rapid access to device fingerprint service.
 
 
 
-#Where to get support
+# Where to get support
 We are happy to provide technical support for our open-source trustdevice-js library. We recommend using GitHub Issues to submit bugs or Discussions to ask questions. Using issues and discussions publicly will help the open-source community and other users with similar issues.
 
 In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/deviceFingerprint](https://www.trustdecision.com/deviceFingerprint) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
