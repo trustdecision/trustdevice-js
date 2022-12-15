@@ -8,6 +8,7 @@
 </p>
 
 ##TrustDevice-JS
+
 A lightweight library for determining device uniqueness and risk identification.
 
 Create a device identifier based on basic device information.
@@ -18,13 +19,13 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 
 ###Browser support
 
-+ Internet Explorer 9+
-+ Edge 12+
-+ Chrome 33+
-+ Firefox 29+
-+ Desktop Safari 7.1+
-+ Mobile Safari 8+
-+ Android Browser 4.4+
+- Internet Explorer 9+
+- Edge 12+
+- Chrome 33+
+- Firefox 29+
+- Desktop Safari 7.1+
+- Mobile Safari 8+
+- Android Browser 4.4+
 
 ## Integration Description
 
