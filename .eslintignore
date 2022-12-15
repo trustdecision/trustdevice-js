@@ -1,0 +1,4 @@
+/dist/
+/*.js
+/src/utils/md5.js
+

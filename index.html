@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrustDecisionJs</title>
+  <style type="text/css">
+    a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+    #contain {
+      margin: 0 auto;
+      width: 1000px;
+    }
+    #contain div {
+      padding: 15px;
+    }
+    #contain header {
+      height: 60px;
+    }
+    #contain header a{
+      display: inline-block;
+      font-size: 0;
+    }
+    #contain header img {
+      font-size: 0;
+      height: 50px;
+    }
+    #device_id {
+      font-size: 30px;
+    }
+    .title {
+      font-size: 20px;
+      color: #FFF;
+    }
+
+    #layout {
+      background:#12b455;
+      background-image: linear-gradient(135deg, #12b455 0%, #0f1e41 100%);
+      border-radius: 15px;
+    }
+
+    #data_info_layout {
+    }
+
+    .data_info {
+      color: rgba(255, 255, 255, 0.58);
+    }
+    pre{white-space:pre-wrap;word-wrap:break-word;}
+  </style>
+</head>
+<body>
+<div id="contain">
+  <div>
+    <header>
+      <a href=""><img src="static/image/logo_light.png" alt="TrustDecision Logo"></a>
+    </header>
+    <div id="layout">
+      <div class="title">Device ID:</div>
+      <div id="device_id" class="data_info"></div>
+      <div class="title">Device Risk Label:</div>
+      <div id="device_risk_label" class="data_info"></div>
+      <div class="title">User Agent:</div>
+      <div id="userAgent" class="data_info"></div>
+      <div class="title">Device Detail:</div>
+      <div id="data_info_layout">
+        <pre id="device_detail" class="data_info"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.onload = function () {
+    var show = document.getElementById('device_detail')
+
+    function pretifyJson(json, pretify) {
+      if(pretify === undefined) {
+        pretify = true
+      }
+      if (typeof json !== 'string') {
+        if (pretify) {
+          json = JSON.stringify(json, undefined, 4)
+        } else {
+          json = JSON.stringify(json)
+        }
+      }
+      return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+        function (match) {
+          var cls = '<span>';
+          if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+              cls = '<span class=\'key\'>'
+            } else {
+              cls = '<span class=\'string\'>'
+            }
+          } else if (/true|false/.test(match)) {
+            cls = '<span class=\'boolean\'>'
+          } else if (/null/.test(match)) {
+            cls = '<span class=\'null\'>'
+          }
+          return cls + match + '</span>'
+        }
+      )
+    };
+    (function () {
+      window._fmOpt = {
+        success: function (result) {
+          console.log('deviceId: ', result.device_id)
+          console.log('result: ', result)
+          document.getElementById('device_id').innerHTML = result.device_id
+          document.getElementById('device_risk_label').innerHTML = pretifyJson(result.device_risk_label, true)
+          document.getElementById('userAgent').innerHTML = navigator.userAgent
+          show.innerHTML = pretifyJson(result.device_detail, true)
+        }
+      }
+
+      var fm = document.createElement('script')
+      fm.type = 'text/javascript'
+      fm.async = true
+      fm.src =
+        './dist/fm.js?t='
+        + new Date().getTime();
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(fm, s)
+    })()
+  }
+</script>
+</body>
+</html>
