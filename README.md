@@ -9,6 +9,17 @@
 
 ## TrustDevice-JS
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/@trustdevicejs/trustdevice-js">
+    <img src="https://img.shields.io/npm/v/@trustdevicejs/trustdevice-js.svg" alt="Current NPM version">
+  </a>
+  <a href="https://www.npmjs.com/package/@trustdevicejs/trustdevice-js">
+    <img src="https://img.shields.io/npm/dm/@trustdevicejs/trustdevice-js.svg" alt="Monthly downloads from NPM">
+  </a>
+  <a href="https://www.jsdelivr.com/package/npm/@trustdevicejs/trustdevice-js">
+    <img src="https://img.shields.io/jsdelivr/npm/hm/@trustdevicejs/trustdevice-js.svg" alt="Monthly downloads from jsDelivr">
+  </a>
+</p>
 A lightweight library for determining device uniqueness and risk identification.
 
 Create a device identifier based on basic device information.
