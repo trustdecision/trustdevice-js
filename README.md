@@ -3,7 +3,8 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="static/image/logo_dark.png" />
       <source media="(prefers-color-scheme: light)" srcset="static/image/logo_light.png" />
-      <img src="static/image/logo_dark.png" alt="trustdevice logo" width="729px" height="67px"/>    </picture>
+      <img src="static/image/logo_dark.png" alt="trustdevice logo" width="729px" height="67px"/>
+      </picture>
   </a>
 </p>
 
@@ -88,7 +89,7 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 TrustDecision TrustDevice has the leading device fingerprint technology, which has been integrated by more than 10000 global leading brands, protecting the entire customer journey.
 
 <p align="left">
-  <a href="https://github.com/trustdecision/trustdevice-js">
+  <a href="https://www.trustdecision.com/trustDevice">
     <img src="static/image/trustdevice_card.png" alt="trustdevice card"  />
   </a>
 </p>
@@ -120,7 +121,7 @@ SaaS（Software as a Service）deployment supported, reducing massively your int
 # Where to get support
 We are happy to provide technical support for our open-source trustdevice-js library. We recommend using GitHub Issues to submit bugs or Discussions to ask questions. Using issues and discussions publicly will help the open-source community and other users with similar issues.
 
-In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/deviceFingerprint](https://www.trustdecision.com/deviceFingerprint) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
+In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/trustDevice](https://www.trustdecision.com/trustDevice) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
 
 ## License
 
