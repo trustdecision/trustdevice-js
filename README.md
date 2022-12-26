@@ -21,6 +21,7 @@
     <img src="https://img.shields.io/jsdelivr/npm/hm/@trustdevicejs/trustdevice-js.svg" alt="Monthly downloads from jsDelivr">
   </a>
 </p>
+
 A lightweight library for determining device uniqueness and risk identification.
 
 Create a device identifier based on basic device information.
@@ -119,7 +120,7 @@ SaaS（Software as a Service）deployment supported, reducing massively your int
 
 
 # Where to get support
-We are happy to provide technical support for our open-source trustdevice-js library. We recommend using GitHub Issues to submit bugs or Discussions to ask questions. Using issues and discussions publicly will help the open-source community and other users with similar issues.
+We are happy to provide technical support for our open-source trustdevice-js library. We recommend using GitHub Issues to submit bugs or Discussions to ask questions. Using [issues](https://github.com/trustdecision/trustdevice-js/issues) and [discussions](https://github.com/trustdecision/trustdevice-js/discussions) publicly will help the open-source community and other users with similar issues.
 
 In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/trustDevice](https://www.trustdecision.com/trustDevice) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
 
