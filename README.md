@@ -79,11 +79,11 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 | Device ID | Basic | Extremely stable |
 | Device Risk Label | Basic | Extremely rich |
 | Device Details | Basic  | Extremely rich |
-| IP Location | -  | √ |
-| Device Risk Score | -  | √ |
-| Environment Risk Evaluation | -  | √ |
-| Fraud Tools Detection | -  | √ |
-| Behavioral Activity Capturing | -  | √ |
+| IP Location | -  | ✓ |
+| Device Risk Score | -  | ✓ |
+| Environment Risk Evaluation | -  | ✓ |
+| Fraud Tools Detection | -  | ✓|
+| Behavioral Activity Capturing | -  | ✓ |
 
 ## Pro Introduction
 
