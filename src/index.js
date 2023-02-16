@@ -17,6 +17,8 @@ import getFont from './detection/font'
 
 if (!window._fmOpt) {
   console.warn && console.warn('_fmOpt is not defined!')
+} else if (!window._fmOpt.success) {
+  console.warn && console.warn('_fmOpt.success is not defined!')
 }
 const tasks = [
   {
