@@ -1,7 +1,8 @@
 {
-  "name": "trustdevice-js",
-  "version": "1.0.0",
+  "name": "@trustdevicejs/trustdevice-js",
+  "version": "1.0.2",
   "main": "dist/fm.js",
+  "description": "A lightweight library for determining device uniqueness and risk identification.",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -24,5 +25,22 @@
   },
   "dependencies": {
     "promise-polyfill": "^8.1.0"
-  }
+  },
+  "author": "trustdevice",
+  "keywords": [
+    "trustdevice",
+    "trustdecision",
+    "Fingerprint",
+    "deviceid",
+    "device"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustdecision/trustdevice-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trustdecision/trustdevice-js/issues"
+  },
+  "homepage": "https://github.com/trustdecision/trustdevice-js#readme"
 }
