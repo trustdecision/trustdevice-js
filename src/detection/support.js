@@ -14,7 +14,6 @@ export default function getSupport() {
     supportIndexedDB = !!window.indexedDB
   } catch (e) {
   }
-  !!window.indexedDB
   return {
     localStorage: supportLocalStorage,
     sessionStorage: supportSessionStorage,
