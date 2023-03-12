@@ -90,7 +90,7 @@ Will remain the same after uninstalling and reinstalling or clearing browser dat
 TrustDecision TrustDevice has the leading device fingerprint technology, which has been integrated by more than 10000 global leading brands, protecting the entire customer journey.
 
 <p align="left">
-  <a href="https://www.trustdecision.com/trustDevice">
+  <a href="https://www.trustdecision.com/solutions/trustdevice">
     <img src="static/image/trustdevice_card.png" alt="trustdevice card"  />
   </a>
 </p>
@@ -122,7 +122,7 @@ SaaS（Software as a Service）deployment supported, reducing massively your int
 # Where to get support
 We are happy to provide technical support for our open-source trustdevice-js library. We recommend using GitHub Issues to submit bugs or Discussions to ask questions. Using [issues](https://github.com/trustdecision/trustdevice-js/issues) and [discussions](https://github.com/trustdecision/trustdevice-js/discussions) publicly will help the open-source community and other users with similar issues.
 
-In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/trustDevice](https://www.trustdecision.com/trustDevice) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
+In addition, any idea or interest in using TrustDevice Pro can be found on the official website（ [https://www.trustdecision.com/solutions/trustdevice](https://www.trustdecision.com/solutions/trustdevice) ）, registered account, free trial; Or via email（ TrustDevice@TrustDecision.com ）, contact us directly and quickly open the service.
 
 ## License
 
