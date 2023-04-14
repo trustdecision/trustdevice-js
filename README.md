@@ -130,7 +130,7 @@ In addition, any idea or interest in using TrustDevice Pro can be found on the o
       <th>Type</th><th>Scene</th><th>Result</th><th>TrusDevice Pro</th><th>Fingerprint</th><th>Seon</th>
   </tr>
   <tr align="center">
-      <td>Device Fingerprint Compatibility</td><td>IE8 and above</td><td>Able to collect device info and generate device ID</td><td>✅</td><td>❌ (not supported by IE)</td><td>❌ (IE10 and below are not supported)</td>
+      <td>Device Fingerprint Compatibility</td><td>IE9 and above</td><td>Able to collect device info and generate device ID</td><td>✅</td><td>❌ (not supported by IE)</td><td>❌ (IE10 and below are not supported)</td>
   </tr>
   <tr align="center">
       <td rowspan="2">Device fingerprint uniqueness</td><td>Access web application twice using browser on the same device</td><td>Device fingerprints/ID matches </td><td>✅</td><td>✅</td><td>✅</td>
@@ -151,13 +151,13 @@ In addition, any idea or interest in using TrustDevice Pro can be found on the o
     <td>Before and after browser upgrade on the same device</td><td>Device fingerprints/ID match</td><td>✅</td><td>✅</td><td>✅</td>
   </tr>
   <tr align="center">
-     <td rowspan="9">Device Fingerprint Risk Identification</td><td>Web crawlers (bot attacks)</td><td>Ability to identify web crawlers (bot attacks)</td><td>✅</td><td>❌</td><td>✅ (no labels, with fields)</td>
+     <td rowspan="9">Device Fingerprint Risk Identification</td><td>Web crawlers (bot attacks)</td><td>Ability to identify web crawlers (bot attacks)</td><td>✅</td><td>❌</td><td>✅</td>
   </tr>
   <tr align="center">
-    <td>Incognito mode</td><td>Ability to recognize that the browser is in incognito mode/private browsing</td><td>✅</td><td>✅</td><td>✅ (no labels, with fields)</td>
+    <td>Incognito mode</td><td>Ability to recognize that the browser is in incognito mode/private browsing</td><td>✅</td><td>✅</td><td>✅</td>
   </tr>
   <tr align="center">
-    <td>Headless browser (Chrome Headless、phantomJS、selenium、puppeteer)</td><td>Able to identify the risk of use of headless browser</td><td>✅</td><td>❌</td><td>✅ (type name not recognized)</td>
+    <td>Headless browser (Chrome Headless、phantomJS、selenium、puppeteer)</td><td>Able to identify the risk of use of headless browser</td><td>✅</td><td>❌</td><td>✅</td>
   </tr>
   <tr align="center">
     <td>Abnormal user-agent</td><td>Ability to identify UA anomalies</td><td>✅</td><td>❌</td><td>✅</td>
@@ -172,10 +172,10 @@ In addition, any idea or interest in using TrustDevice Pro can be found on the o
     <td>Do not use cookies</td><td>Ability to recognize the prohibition of the use of cookies</td><td>✅</td><td>❌</td><td>✅</td>
   </tr>
   <tr align="center">
-    <td>Browser parameters have been tampered with</td><td>Can identify browser environment tampering</td><td>✅</td><td>❌</td><td>✅ (with similar resolution detection)</td>
+    <td>Browser parameters have been tampered with</td><td>Can identify browser environment tampering</td><td>✅</td><td>❌</td><td>✅</td>
   </tr>
   <tr align="center">
-    <td>Common browser cheating plug-ins</td><td>Can identify common cheating plug-in risks</td><td>✅</td><td>❌</td><td>✅ (plugin name not recognized)</td>
+    <td>Common browser cheating plug-ins</td><td>Can identify common cheating plug-in risks</td><td>✅</td><td>❌</td><td>✅</td>
   </tr>
   <tr align="center">
         <td rowspan="3">Security and Stability</td><td>Code Protection</td><td>The device fingerprint SDK and JS have code protection mechanisms (such as VMP), which effectively resist black hat cracking attempts to manipulate code logic and falsify data</td><td>✅ (VMP)</td><td>❌</td><td>❌</td>
@@ -190,3 +190,4 @@ In addition, any idea or interest in using TrustDevice Pro can be found on the o
 ## License
 
 This library is MIT licensed. Copyright trustdecision, Inc. 2022.
+
