@@ -1,6 +1,6 @@
 {
   "name": "@trustdevicejs/trustdevice-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/fm.js",
   "description": "A lightweight library for determining device uniqueness and risk identification.",
   "devDependencies": {

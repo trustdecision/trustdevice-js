@@ -8,7 +8,7 @@ import getCanvas from './detection/canvas'
 import getMaxTouchPoints from './detection/msMaxTouchPoints'
 import getDebugger from './detection/debugger'
 import getDisabledCookie from './detection/disabledCookie'
-import getTimezone from './detection/timezone'
+import getTimezone, { getTimezoneStr } from './detection/timezone'
 import getTouchSupport from './detection/touchSupport'
 import getGpu from './detection/gpu'
 import getSupport from './detection/support'
@@ -87,6 +87,7 @@ const result = {
 
 const deviceDetail = {}
 const deviceRiskLabel = {}
+const timezoneStr = getTimezoneStr()
 
 // eslint-disable-next-line array-callback-return
 tasks.map((item) => {
@@ -116,6 +117,9 @@ Promise.all(tasksAsync.map(item => item.active())).then((results) => {
   })
   // eslint-disable-next-line camelcase
   result.device_detail = deviceDetail
+  if (timezoneStr) {
+    result.device_detail.timezoneStr = timezoneStr
+  }
   result.device_risk_label = deviceRiskLabel
   window._fmOpt.success && window._fmOpt.success(result)
 })
