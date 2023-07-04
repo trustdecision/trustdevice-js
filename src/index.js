@@ -14,6 +14,7 @@ import getGpu from './detection/gpu'
 import getSupport from './detection/support'
 import getAudioRipple from './detection/audioRipple'
 import getFont from './detection/font'
+import getDocument from './detection/document'
 
 if (!window._fmOpt) {
   console.warn && console.warn('_fmOpt is not defined!')
@@ -56,6 +57,10 @@ const tasks = [
   {
     name: 'font',
     active: getFont,
+  },
+  {
+    name: 'document',
+    active: getDocument,
   },
 ]
 
