@@ -14,20 +14,19 @@ if (ipRegex.exec(win.location.hostname)) {
 }
 const cookie = {
   set(name, value) {
-    try {
-      if (win.localStorage) {
-        localStorage[name] = value
-      }
-    } catch (e) {
-    }
-    try {
-      if (win.sessionStorage) {
-        win.sessionStorage.setItem(name, value)
-      }
-    } catch (e) {
-    }
-
     if (nav.cookieEnabled) {
+      try {
+        if (win.localStorage) {
+          localStorage[name] = value
+        }
+      } catch (e) {
+      }
+      try {
+        if (win.sessionStorage) {
+          win.sessionStorage.setItem(name, value)
+        }
+      } catch (e) {
+      }
       const days = 365 * 1000 * 60 * 60 * 24
       let c = `${name}=${encodeURIComponent(value)}`
       c += `; domain=${domain}; expires=${new Date(new Date().getTime() + days).toGMTString()}; path=/`
@@ -36,25 +35,26 @@ const cookie = {
   },
   get(name) {
     let value = ''
-    try {
-      if (win.localStorage) {
-        value = localStorage[name] || ''
-        if (value.length === 32) {
-          return value
-        }
-      }
-    } catch (e) {
-    }
-    try {
-      if (win.sessionStorage) {
-        value = win.sessionStorage.getItem(name) || ''
-        if (value.length === 32) {
-          return value
-        }
-      }
-    } catch (e) {
-    }
     if (nav.cookieEnabled) {
+      try {
+        if (win.localStorage) {
+          value = localStorage[name] || ''
+          if (value.length === 32) {
+            return value
+          }
+        }
+      } catch (e) {
+      }
+      try {
+        if (win.sessionStorage) {
+          value = win.sessionStorage.getItem(name) || ''
+          if (value.length === 32) {
+            return value
+          }
+        }
+      } catch (e) {
+      }
+
       let start = doc.cookie.indexOf(`${name}=`)
       if (start !== -1) {
         start += name.length + 1
