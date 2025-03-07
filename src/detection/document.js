@@ -1,6 +1,6 @@
 export default function getDocument() {
   const {
-    all = [],
+    referrer = '',
   } = document
-  return { all: all.length }
+  return { referrer }
 }

@@ -15,6 +15,7 @@ import getSupport from './detection/support'
 import getAudioRipple from './detection/audioRipple'
 import getFont from './detection/font'
 import getDocument from './detection/document'
+import getUserAgentData from './detection/userAgentData'
 
 if (!window._fmOpt) {
   console.warn && console.warn('_fmOpt is not defined!')
@@ -58,10 +59,6 @@ const tasks = [
     name: 'font',
     active: getFont,
   },
-  {
-    name: 'document',
-    active: getDocument,
-  },
 ]
 
 const riskTasks = [
@@ -79,6 +76,10 @@ const tasksAsync = [
     name: 'audioRipple',
     active: getAudioRipple,
   },
+  {
+    name: 'userAgentData',
+    active: getUserAgentData,
+  },
 ]
 
 const result = {
@@ -93,7 +94,8 @@ const result = {
 const deviceDetail = {}
 const deviceRiskLabel = {}
 const timezoneStr = getTimezoneStr()
-
+const documentDel = getDocument()
+const initTimestamp = Date.now()
 // eslint-disable-next-line array-callback-return
 tasks.map((item) => {
   if (item.name === 'navigator' || item.name === 'screen') {
@@ -125,6 +127,10 @@ Promise.all(tasksAsync.map(item => item.active())).then((results) => {
   if (timezoneStr) {
     result.device_detail.timezoneStr = timezoneStr
   }
+  if (documentDel.referrer) {
+    result.device_detail.documentReferrer = documentDel.referrer
+  }
+  result.device_detail.initTime = Date.now() - initTimestamp
   result.device_risk_label = deviceRiskLabel
   window._fmOpt.success && window._fmOpt.success(result)
 })
